@@ -1,19 +1,15 @@
 #include <stdio.h>
 /**
-*Entry
-*Description: Neww manin to 
-*Exit
+* main - prints using put with no args
+*
+* Description: Project prints out a string using put
+*
+* Return: returns 0
 */
 int main(void)
 {
-	/*
-	*Main entry
-	*DescriptionL mew main
-	*exit
-	*/
-	puts("\"Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle";
 	/* return 0*/
 	return (0);
 	/*Main exit*/
 }
-
