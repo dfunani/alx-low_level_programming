@@ -10,9 +10,10 @@ int main(void)
 	*Main entry
 	*DescriptionL mew main
 	*exit
-	*/	
+	*/
 	puts("\"Programming is like building a multilingual puzzle");
-	return 0;
-	//Main exit
+	/* return 0*/
+	return (0);
+	/*Main exit*/
 }
 
