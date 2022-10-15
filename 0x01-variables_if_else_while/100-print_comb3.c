@@ -21,7 +21,7 @@ int main(void)
             putchar(i);
             putchar(j);
  
-	    if (tolower(i) + tolower(j) != 89)
+	    if (tolower(i) != 56)
 	    {
 		putchar(',');
 		putchar(' ');
