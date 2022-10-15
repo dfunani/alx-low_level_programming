@@ -23,7 +23,7 @@ int main(void)
 		{
 			for (k = 48; k < 58; k++)
 			{
-				for (m = 48; m < 58; m++)
+				for (m = j + 1; m < 58; m++)
 				{
 					if (k == 48 && m == 48)
 					{
