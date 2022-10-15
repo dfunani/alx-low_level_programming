@@ -17,7 +17,6 @@ int main(void)
 	{
 		putchar(letter);
 	}
-	putchar('z');
 	putchar('\n');
 	return (0);
 }
