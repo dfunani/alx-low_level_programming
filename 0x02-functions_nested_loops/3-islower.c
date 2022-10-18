@@ -24,6 +24,6 @@ int _islower(int c)
 	else
 	{
 		r = 0;
-		return (write(1, &r, 1);
+		return (write(1, &r, 1));
 	}
 }
