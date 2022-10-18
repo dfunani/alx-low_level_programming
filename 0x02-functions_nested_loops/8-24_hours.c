@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * jack_bauer - prints the daily clock in 00:00:00 format
@@ -37,6 +37,7 @@ int jack_bauer(void)
 							int tm = m + 48;
 							int tS = S + 48;
 							int ts = s + 48;
+							char nL = '\n';
 
 							write(1, &tH, 1);
 							write(1, &th, 1);
@@ -46,6 +47,7 @@ int jack_bauer(void)
 							write(1, &q, 1);
 							write(1, &tS, 1);
 							write(1, &ts, 1);
+							write(1, &nL, 1);
 						}
 					}
 				}
