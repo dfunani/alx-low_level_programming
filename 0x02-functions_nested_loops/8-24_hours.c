@@ -1,5 +1,5 @@
 #include "main.h"
-0;10;1c
+
 /**
  * jack_bauer - prints the daily clock in 00:00:00 format
  *
