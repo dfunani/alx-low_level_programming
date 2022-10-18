@@ -14,4 +14,16 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
+int print_alphabet()
+{
+	char letter;
+
+	for (letter = 'a'; letter != 'z' + 1; letter++)
+	{
+		_putchar(letter);
+	}
+
+	_putchar('\n');
+	return (0);
+}
 #endif
