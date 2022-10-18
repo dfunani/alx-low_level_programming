@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * print_last_digit - prints the last digit
@@ -17,9 +18,13 @@ int print_last_digit(int n)
 	{
 		n *= -1;
 	}
+	else if (n == INT_MIN)
+	{
+		n = INT_MAX;
+	}
 
 	k = (n % 10) + 48;
-       	m = (n % 10);
+	m = (n % 10);
 
         write(1, &k, 1);
 	return (m);
