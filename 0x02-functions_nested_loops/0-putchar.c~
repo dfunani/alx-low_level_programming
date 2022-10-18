@@ -1,0 +1,12 @@
+#include "main.h"
+/**
+ * main - prints _putchar without using print
+ *
+ * Return: 0
+ *
+ */
+
+int main(void)
+{
+	return (0);
+}
