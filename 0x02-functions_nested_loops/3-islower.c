@@ -1,3 +1,5 @@
+#include <unistd>
+
 /**
  * _islower - Returns pos or neg is low or upp
  * @c: The int to be evaluated
