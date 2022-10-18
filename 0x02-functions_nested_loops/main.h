@@ -9,18 +9,9 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
-int print_alphabet(void)
+int _putchar(char c)
 {
-	char letter;
-
-	for (letter = 'a'; letter != 'z' + 1; letter++)
-	{
-		write(1, &letter, 1);
-	}
-	letter = '\n';
-	write(1, &letter, 1);
-	return (0);
+	return (write(1, &c, 1));
 }
 
 #endif

@@ -1,4 +1,3 @@
-
 #include "main.h"
 /**
  *
@@ -10,6 +9,13 @@
 
 int main(void)
 {
-	print_alphabet();
+	char letter;
+
+	for (letter = 'a'; letter != 'z' + 1; letter++)
+	{
+		_putchar(letter);
+	}
+
+	_putchar('\n');
 	return (0);
 }
