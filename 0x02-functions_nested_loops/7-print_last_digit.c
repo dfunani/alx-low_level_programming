@@ -10,13 +10,14 @@
 
 int print_last_digit(int n)
 {
+	int k;
+	int m;
+
 	if (n < 0)
 	{
 		n *= -1;
 	}
-	int k;
-	int m;
-	
+
 	k = (n % 10) + 48;
        	m = (n % 10);
 
