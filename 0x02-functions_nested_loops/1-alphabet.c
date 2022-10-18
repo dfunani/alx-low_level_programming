@@ -1,21 +1,15 @@
-#include <unistd.h>
+
+#include "main.h"
 /**
  *
- * print_alphabet - prints alphabet in lowercase
+ * main - prints alphabet in lowercase
  *
  * Return: 0
  *
  */
 
-int print_alphabet(void)
+int main(void)
 {
-	char letter;
-
-	for (letter = 'a'; letter != 'z'; letter++)
-	{
-		write(1, &letter, 1);
-	}
-	letter = '\n';
-	write(1, &letter, 1);
+	print_alphabet();
 	return (0);
 }
