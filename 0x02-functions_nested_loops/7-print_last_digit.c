@@ -10,7 +10,7 @@
 
 int print_last_digit(int n)
 {
-	int r = (n % 10) + 10;
+	int r = (n % 10) + 48;
 	int m = (n % 10);
 
         write(1, &r, 1);
