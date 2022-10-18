@@ -14,9 +14,9 @@ int print_last_digit(int n)
 	{
 		n *= -1;
 	}
-	int r = (n % 10) + 48;
+	int k = (n % 10) + 48;
 	int m = (n % 10);
 
-        write(1, &r, 1);
+        write(1, &k, 1);
 	return (m);
 }
