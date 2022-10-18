@@ -1,13 +1,13 @@
 #include <unistd.h>
 
 /**
- * print_alphabet - prints alphabet in lowercase
+ * print_alphabet_x10 - prints alphabet in lowercase
  *
  * Return: 0
  *
  */
 
-int print_alphabet(void)
+int print_alphabet_x10(void)
 {
 	char letter;
 	int i;
