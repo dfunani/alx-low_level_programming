@@ -32,7 +32,7 @@ void times_table(void)
 			{
 				int r = (tH % 10) + 48;
 				tH /= 10;
-				s += r;
+				s += &r;
 			}
 			while (s[i] > 47 && s[i] < 59)
 			{
