@@ -20,7 +20,7 @@ void print_to_98(int n)
 	{
 		if(Tens > 0)
 		{
-			write(1, &Tens; 1);
+			write(1, &Tens, 1);
 		}
 		else if (Tens < 0)
 		{
