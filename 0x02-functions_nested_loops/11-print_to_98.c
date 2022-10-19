@@ -10,6 +10,7 @@
 void print_to_98(int n)
 {
 	int Tens;
+	int r;
 	int Units;
 	char space;
 	char newLine;
@@ -25,13 +26,13 @@ void print_to_98(int n)
 		else if (Tens < 0)
 		{
 			write(1, &neg, 1);
-			int r = (Tens * -1);
+			r = (Tens * -1);
 			write(1, &r, 1);
 		}
 
 		for (Units = 0; Units < 10; Units++)
 		{
-			write(1, &Unit, 1);
+			write(1, &Units, 1);
 			space = ' ';
 			comma = ',';
 			write(1, &comma, 1);
