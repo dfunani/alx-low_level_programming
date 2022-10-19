@@ -42,7 +42,7 @@ void print_to_98(int n)
 				r = Tens;
 			}
 			counter = 0;
-			while(r)
+			while (r)
 			{
 				s[counter] = r % 10;
 				r /= 10;
@@ -58,15 +58,15 @@ void print_to_98(int n)
 				{
 					write(1, &neg, 1);
 				}
-		       		r = s[Units] + 48;
-	       			write(1, &r, 1);
+				r = s[Units] + 48;
+				write(1, &r, 1);
 			}
 			if (Tens != 98)
 			{
 				space = ' ';
 				comma = ',';
 				write(1, &comma, 1);
-			       	write(1, &space, 1);
+				write(1, &space, 1);
 			}
 			else
 			{
@@ -80,7 +80,7 @@ void print_to_98(int n)
 		{
 			r = Tens;
 			counter = 0;
-			while(r)
+			while (r)
 			{
 				s[counter] = r % 10;
 				r /= 10;
