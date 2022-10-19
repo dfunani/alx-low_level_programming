@@ -18,34 +18,33 @@ void print_to_98(int n)
 
 	for (Tens = n; Tens < 10; Tens++)
 	{
-		if(Tens > 0)
-		{
-			write(1, &Tens, 1);
-		}
-		else if (Tens < 0)
-		{
-			write(1, &neg, 1);
-			r = (Tens * -1);
-			write(1, &r, 1);
-		}
-
 		for (Units = 0; Units < 10; Units++)
 		{
-			if(Tens > 0 && Tens < 9)
+			if(Tens > 0 && Tens < 9 && Units < 9)
 			{
-				write(1, &Tens, 1);
+				r = Tens + 48;
+				write(1, &r, 1);
 			}
 			else if (Tens < 0)
 			{
 				write(1, &neg, 1);
-				r = (Tens * -1);
+				r = (Tens * -1) + 48;
 				write(1, &r, 1);
 			}
-			if (Tens == 9 && Units == 9)
+			if (Tens == 9)
 			{
-				break;
+				if (Units > 8)
+				{
+					break;
+				}
+				else
+				{
+					r = Tens + 48;
+					write(1, &r, 1);
+				}
 			}
-			write(1, &Units, 1);
+			r = Units + 48;
+			write(1, &r, 1);
 			space = ' ';
 			comma = ',';
 			write(1, &comma, 1);
