@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints the daily clock in 00:00:00 format
+ * times_table - prints the daily clock in 00:00:00 format
  *
  * Return: 0
  *
  */
 
-void jack_bauer(void)
+void times_table(void)
 {
 	int H;
 	int h;
