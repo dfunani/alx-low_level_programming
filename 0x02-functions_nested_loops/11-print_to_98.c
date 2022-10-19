@@ -16,46 +16,96 @@ void print_to_98(int n)
 	char comma;
 	char neg = '-';
 	char nL = '\n';
+	int counter;
+	int s[4];
 
 	if (n < 99)
 	{
-		for (Tens = n / 10; Tens < 10; Tens++)
+		for (Tens = n; Tens < 99; Tens++)
 		{
-			for (Units = n % 10; Units < 10; Units++)
+			if (Tens == 0)
 			{
-				if(Tens > 0 && Tens < 9 && Units < 9)
+				comma = ',';
+				space = ' ';
+				r = Tens + 48;
+				write(1, &r, 1);
+				write(1, &comma, 1);
+				write(1, &space, 1);
+				continue;
+			}
+			if (Tens < 0)
+			{
+				r = Tens * -1;
+			}
+			else
+			{
+				r = Tens;
+			}
+			counter = 0;
+			while(r)
+			{
+				s[counter] = r % 10;
+				r /= 10;
+				counter++;
+				if (counter > 2)
 				{
-					r = Tens + 48;
-					write(1, &r, 1);
+					break;
 				}
-				else if (Tens < 0)
+			}
+			for (Units = counter - 1; Units >= 0; Units--)
+			{
+				if (Tens < 0 && Units == counter - 1)
 				{
 					write(1, &neg, 1);
-					r = (Tens * -1) + 48;
-					write(1, &r, 1);
 				}
-				if (Tens == 9)
-				{
-					if (Units > 8)
-					{
-						write(1, &nL, 1);
-						break;
-					}
-					else
-					{
-						r = Tens + 48;
-						write(1, &r, 1);
-					}
-			        }
-				r = Units + 48;
-				write(1, &r, 1);
+		       		r = s[Units] + 48;
+	       			write(1, &r, 1);
+			}
+			if (Tens != 98)
+			{
 				space = ' ';
 				comma = ',';
-				if (Tens != 9 && Units != 8)
+				write(1, &comma, 1);
+			       	write(1, &space, 1);
+			}
+			else
+			{
+				write(1, &nL, 1);
+			}
+		}
+	}
+	else if (n > 98)
+	{
+		for (Tens = n; Tens > 97; Tens--)
+		{
+			r = Tens;
+			counter = 0;
+			while(r)
+			{
+				s[counter] = r % 10;
+				r /= 10;
+				counter++;
+				if (counter > 2)
 				{
-					write(1, &comma, 1);
-					write(1, &space, 1);
+					break;
 				}
+			}
+
+			for (Units = counter - 1; Units >= 0; Units--)
+			{
+				r = s[Units] + 48;
+				write(1, &r, 1);
+			}
+			if (Tens != 98)
+			{
+				space = ' ';
+				comma = ',';
+				write(1, &comma, 1);
+				write(1, &space, 1);
+			}
+			else
+			{
+				write(1, &nL, 1);
 			}
 		}
 	}
