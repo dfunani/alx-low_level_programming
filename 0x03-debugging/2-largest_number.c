@@ -28,6 +28,11 @@ int largest_number(int a, int b, int c)
 	{
 		largest = (a + b + c) / 3;
 	}
+	else if (a == b || a == c || b == c)
+	{
+		largest = (a == b) ? (a + b) / 2 : (b == c) ? (c + b) / 2 :
+			(a + c) / 2;
+	}
 
 	return (largest);
 }
