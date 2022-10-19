@@ -12,15 +12,21 @@ void times_table(void)
 	int H;
 	int h;
 	char nL = '\n';
-	for (H = 0; H < 3; H++)
+	for (H = 0; H < 10; H++)
 	{
 		for (h = 0; h < 10; h++)
 		{
-			int tH = H * h;
+			int tH = (H * h);
 			char tM = ',';
 			char tm = ' ';
 
-			write(1, &tH, 1);
+			while (th < 1)
+			{
+				int r = (th % 10) + 48;
+				write(1, &r, 1);
+				th /= 10;
+			}
+
 			write(1, &tM, 1);
 			write(1, &tm, 1);
 		}
