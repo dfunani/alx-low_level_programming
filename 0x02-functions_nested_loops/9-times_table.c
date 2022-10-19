@@ -25,7 +25,7 @@ void times_table(void)
 				r /= 10;
 				counter++;
 			}
-			if (H * h < 10)
+			if (H * h < 10 && h != 0)
 			{
 				write(1, &space, 1);
 			}
