@@ -25,7 +25,7 @@ void jack_bauer(void)
 			{
 				break;
 			}
-		        for (M = 0; M < 6; M++)
+			for (M = 0; M < 6; M++)
 			{
 				for (m = 0; m < 10; m++)
 				{
