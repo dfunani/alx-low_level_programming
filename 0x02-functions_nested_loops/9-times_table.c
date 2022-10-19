@@ -17,7 +17,6 @@ void times_table(void)
 	int h;
 	char nL = '\n';
 	int s[2];
-	int r;
 
 	for (H = 0; H < 10; H++)
 	{
