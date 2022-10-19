@@ -31,6 +31,20 @@ void print_to_98(int n)
 
 		for (Units = 0; Units < 10; Units++)
 		{
+			if(Tens > 0 && Tens < 9)
+			{
+				write(1, &Tens, 1);
+			}
+			else if (Tens < 0)
+			{
+				write(1, &neg, 1);
+				r = (Tens * -1);
+				write(1, &r, 1);
+			}
+			if (Tens == 9 && Units == 9)
+			{
+				break;
+			}
 			write(1, &Units, 1);
 			space = ' ';
 			comma = ',';
