@@ -30,9 +30,15 @@ void times_table(void)
 				r /= 10;
 				counter++;
 			}
-			for (m = counter - 1; m >= 0; m++)
+			if (H * h == 0)
 			{
-				write(1, &s[m], 1);
+				r = 48;
+				write(1, &r, 1);
+			}
+			for (m = counter - 1; m >= 0; m--)
+			{
+				r = s[m] + 48;
+				write(1, &r, 1);
 			}
 			if (h >= 9)
 			{
