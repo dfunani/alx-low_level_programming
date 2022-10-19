@@ -16,39 +16,42 @@ void print_to_98(int n)
 	char comma;
 	char neg = '-';
 
-	for (Tens = n; Tens < 10; Tens++)
+	if (n < 99)
 	{
-		for (Units = 0; Units < 10; Units++)
+		for (Tens = n / 10; Tens < 10; Tens++)
 		{
-			if(Tens > 0 && Tens < 9 && Units < 9)
+			for (Units = n % 10; Units < 10; Units++)
 			{
-				r = Tens + 48;
-				write(1, &r, 1);
-			}
-			else if (Tens < 0)
-			{
-				write(1, &neg, 1);
-				r = (Tens * -1) + 48;
-				write(1, &r, 1);
-			}
-			if (Tens == 9)
-			{
-				if (Units > 8)
-				{
-					break;
-				}
-				else
+				if(Tens > 0 && Tens < 9 && Units < 9)
 				{
 					r = Tens + 48;
 					write(1, &r, 1);
 				}
+				else if (Tens < 0)
+				{
+					write(1, &neg, 1);
+					r = (Tens * -1) + 48;
+					write(1, &r, 1);
+				}
+				if (Tens == 9)
+				{
+					if (Units > 8)
+					{
+						break;
+					}
+					else
+					{
+						r = Tens + 48;
+						write(1, &r, 1);
+					}
+				}
+				r = Units + 48;
+				write(1, &r, 1);
+				space = ' ';
+				comma = ',';
+				write(1, &comma, 1);
+				write(1, &space, 1);
 			}
-			r = Units + 48;
-			write(1, &r, 1);
-			space = ' ';
-			comma = ',';
-			write(1, &comma, 1);
-			write(1, &space, 1);
 		}
 	}
 }
