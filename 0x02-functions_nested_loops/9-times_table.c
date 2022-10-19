@@ -10,13 +10,8 @@
 
 void times_table(void)
 {
-	int H;
-	int counter, r, m;
-	char comma = ',';
-	char space = ' ';
-	int h;
-	char nL = '\n';
-	int s[2];
+	int H, h, counter, r, m, s[2];
+	char comma = ',', space = ' ', nL = '\n';
 
 	for (H = 0; H < 10; H++)
 	{
@@ -29,6 +24,10 @@ void times_table(void)
 				s[counter] = r % 10;
 				r /= 10;
 				counter++;
+			}
+			if (H * h < 10)
+			{
+				write(1, &space, 1);
 			}
 			if (H * h == 0)
 			{
@@ -50,6 +49,5 @@ void times_table(void)
 				write(1, &space, 1);
 			}
 		}
-		write(1, &nL, 1);
 	}
 }
