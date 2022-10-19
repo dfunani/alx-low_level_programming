@@ -19,7 +19,11 @@ void times_table(void)
 			int tH = (H * h);
 			char tM = ',';
 			char tm = ' ';
-
+			if (tH == 0)
+			{
+				int r = 48;
+				write(1, &r, 1);
+			}
 			while (tH)
 			{
 				int r = (tH % 10) + 48;
