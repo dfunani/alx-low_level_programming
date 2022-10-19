@@ -15,6 +15,7 @@ void print_to_98(int n)
 	char space;
 	char comma;
 	char neg = '-';
+	char nL = '\n';
 
 	if (n < 99)
 	{
@@ -37,6 +38,7 @@ void print_to_98(int n)
 				{
 					if (Units > 8)
 					{
+						write(1, &nL, 1);
 						break;
 					}
 					else
@@ -44,13 +46,14 @@ void print_to_98(int n)
 						r = Tens + 48;
 						write(1, &r, 1);
 					}
-				}
+			        }
 				r = Units + 48;
 				write(1, &r, 1);
 				space = ' ';
 				comma = ',';
 				write(1, &comma, 1);
 				write(1, &space, 1);
+
 			}
 		}
 	}
