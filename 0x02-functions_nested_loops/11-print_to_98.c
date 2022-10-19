@@ -51,9 +51,11 @@ void print_to_98(int n)
 				write(1, &r, 1);
 				space = ' ';
 				comma = ',';
-				write(1, &comma, 1);
-				write(1, &space, 1);
-
+				if (Tens != 9 && Units != 8)
+				{
+					write(1, &comma, 1);
+					write(1, &space, 1);
+				}
 			}
 		}
 	}
