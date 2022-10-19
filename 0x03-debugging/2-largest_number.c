@@ -24,9 +24,9 @@ int largest_number(int a, int b, int c)
 	{
 		largest = c;
 	}
-	else
+	else if (a == b && b == c && a == c)
 	{
-		largest = 0;
+		largest = (a + b + c) / 3;
 	}
 
 	return (largest);
