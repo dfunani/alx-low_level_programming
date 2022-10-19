@@ -13,7 +13,6 @@ void print_to_98(int n)
 	int r;
 	int Units;
 	char space;
-	char newLine;
 	char comma;
 	char neg = '-';
 
@@ -36,7 +35,7 @@ void print_to_98(int n)
 			space = ' ';
 			comma = ',';
 			write(1, &comma, 1);
-			write
+			write(1, &space, 1);
 		}
 	}
 }
