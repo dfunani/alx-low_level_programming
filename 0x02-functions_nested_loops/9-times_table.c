@@ -11,37 +11,39 @@
 void times_table(void)
 {
 	int H;
+	int counter, r, m;
+	char comma = ',';
+	char space = ' ';
 	int h;
 	char nL = '\n';
+	int s[2];
+	int r;
+
 	for (H = 0; H < 10; H++)
 	{
 		for (h = 0; h < 10; h++)
 		{
-			int tH = (H * h);
-			char tM = ',';
-			char tm = ' ';
-			char s[] = "";
-			int i;
-
-			if (tH == 0)
+			r = H * h;
+			counter = 0;
+			while (r)
 			{
-				int r = 48;
-				write(1, &r, 1);
+				s[counter] = r % 10;
+				r /= 10;
+				counter++;
 			}
-			while (tH)
+			for (m = counter - 1; m >= 0; m++)
 			{
-				int r = (tH % 10) + 48;
-				tH /= 10;
-				s += &r;
+				write(1, &s[m], 1);
 			}
-			while (s[i] > 47 && s[i] < 59)
+			if (h >= 9)
 			{
-				write(1, &s[i], 1);
-				tH /= 10;
+				write(1, &nL, 1);
 			}
-
-			write(1, &tM, 1);
-			write(1, &tm, 1);
+			else
+			{
+				write(1, &comma, 1);
+				write(1, &space, 1);
+			}
 		}
 		write(1, &nL, 1);
 	}
