@@ -28,8 +28,7 @@ void more_numbers(void)
 			r = i;
 		}
 		counter = 0;
-		do
-		{
+		do {
 			_putchar((r % 10) + 48);
 			r /= 10;
 			counter++;
