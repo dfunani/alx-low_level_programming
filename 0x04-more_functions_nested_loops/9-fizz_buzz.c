@@ -30,7 +30,10 @@ int main(void)
 		{
 			printf("%i", i);
 		}
-		printf("%c", ' ');
+		if (i != 100)
+		{
+			printf("%c", ' ');
+		}
 	}
 	printf("%c", '\n');
 	return (0);
