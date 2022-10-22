@@ -4,13 +4,13 @@
  * main - lists numbers and replaces multiples of 3, 5 and 3&5 with fizz,
  *  buzz and fizzbuzz
  *
+ * Return: 0
+ *
  */
 
-void main(void)
+int main(void)
 {
-	int i;
-	int r;
-	int counter;
+	int i, r, counter;
 
 	for (i = 1; i < 101; i++)
 	{
@@ -45,4 +45,5 @@ void main(void)
 		_putchar(' ');
 	}
 	_putchar('\n');
+	return (0);
 }
