@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - prints the given int to stdout
+ * print_number - prints the given int to stdout
  * @n: int too be printed
  *
  */
@@ -26,7 +26,7 @@ void print_number(int n)
 		}
 		else
 		{
-			arr[i] = ( n % 10 + 48);
+			arr[i] = (n % 10 + 48);
 			n /= 10;
 		}
 		i++;
