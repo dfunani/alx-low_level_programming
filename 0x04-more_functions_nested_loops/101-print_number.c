@@ -21,7 +21,7 @@ void print_number(int n)
 		if (n < 0)
 		{
 			_putchar('-');
-			arr[i] = (-n % 10 + 48);
+			arr[i] = (-(n % 10) + 48);
 			n /= -10;
 		}
 		else
