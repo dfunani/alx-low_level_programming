@@ -2,9 +2,9 @@
 
 /**
  * _strlen - returns the string length
- * @n: a pointer to an array of chars
+ * @s: a pointer to an array of chars
  *
- * Return: int of length of str
+ * Return: 0 or > 0int of length of str
  *
  */
 
