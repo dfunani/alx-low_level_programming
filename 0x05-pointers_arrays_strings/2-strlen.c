@@ -12,6 +12,10 @@ int _strlen(char *s)
 {
 	int i;
 
+	if (!s || !*s)
+	{
+		return (0);
+	}
 	i = 1;
 	while (s[i] != '\0')
 	{
