@@ -16,7 +16,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (src[i])
 	{
-		if (i == n)
+		if (i == n - 1)
 		{
 			break;
 		}
