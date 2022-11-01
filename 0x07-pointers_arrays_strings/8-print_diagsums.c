@@ -15,7 +15,7 @@ void print_diagsums(int *a, int size)
 
 	rightDiag = 0;
 	leftDiag = 0;
-	for ( i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		rightDiag += *(a + (size * i) + i);
 		leftDiag += *(a + (size * i) + (size - 1 - i));
