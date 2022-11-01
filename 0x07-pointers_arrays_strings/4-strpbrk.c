@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strbrk - returns a pointer to the first segment acceptable
+ * _strpbrk - returns a pointer to the first segment acceptable
  * @s: pointer to str to eval
  * @accept: str to segment
  *
