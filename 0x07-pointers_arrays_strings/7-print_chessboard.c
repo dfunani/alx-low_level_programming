@@ -2,7 +2,7 @@
 
 /**
  * print_chessboard - displays a bord given as a 2D array
- * @a[8]: pointer to the board array
+ * @a: pointer to the board array
  *
  */
 
