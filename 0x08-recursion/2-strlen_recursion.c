@@ -4,6 +4,8 @@
  * _strlen_recursion - prints using recursion
  * @s: string to print
  *
+ * Return: int as len
+ *
  */
 
 int _strlen_recursion(char *s)
