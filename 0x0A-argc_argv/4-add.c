@@ -24,7 +24,11 @@ int main(int argc, char **argv)
 	runningTotal = 0;
 	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(*argv[i]) == 0)
+		if (atoi(argv[i]) < 0)
+		{
+			return (1);
+		}
+		else if (isdigit(*argv[i]) == 0)
 		{
 			printf("%s\n", "Error");
 			return (1);
