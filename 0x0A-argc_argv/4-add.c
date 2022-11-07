@@ -18,6 +18,7 @@ int main(int argc, char **argv)
 
 	if (argc < 2)
 	{
+		printf("%i", 0);
 		return (0);
 	}
 	runningTotal = 0;
