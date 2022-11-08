@@ -1,5 +1,5 @@
 #include "main.h"
-
+0;10;1c
 /**
  * _strdup - array to store the desired cahar
  * @str: length of array
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	if (i == 0)
+	if (*str == 0 || str == 0)
 	{
 		return (NULL);
 	}
