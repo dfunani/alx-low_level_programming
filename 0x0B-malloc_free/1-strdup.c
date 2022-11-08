@@ -19,10 +19,6 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	if (*str == 0 || str == 0)
-	{
-		return (NULL);
-	}
 	array = malloc(sizeof(char) * (i + 1));
 	for (j = 0; j <= i; j++)
 	{
