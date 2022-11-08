@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	if (!str || !*str)
+	if (!str || !*str || str == NULL)
 	{
 		return (NULL);
 	}
