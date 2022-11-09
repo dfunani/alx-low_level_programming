@@ -10,7 +10,7 @@
  *
  */
 
-char *_strncat(char *dest, char *src, int n)
+int _atoi(char *s)
 {
-	return (NULL);
+	return (0);
 }

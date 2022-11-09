@@ -10,7 +10,7 @@
  *
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strstr(char *haystack, char *needle)
 {
 	return (NULL);
 }

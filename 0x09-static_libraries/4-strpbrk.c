@@ -10,7 +10,7 @@
  *
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strpbrk(char *s, char *accept)
 {
 	return (NULL);
 }
