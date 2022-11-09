@@ -15,6 +15,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i;
 	unsigned int j;
 	unsigned int k;
+	unsigned int l;
 
 	i = 0;
 	k = 0;
@@ -26,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		k++;
 	}
-	array = malloc((sizeof(char) * i) + (sizeof(char) * k) + 1);
+	array = malloc(sizeof(char) * (i + k + 1));
 	if (array == NULL)
 	{
 		free(array);
@@ -36,9 +37,9 @@ char *str_concat(char *s1, char *s2)
 	{
 		array[j] = s1[j];
 	}
-	for (j = i + 1; j <= i + k; j++)
+	for (l = i + 1; l <= i + k; l++)
 	{
-		array[j] = s2[j];
+		array[l] = s2[l - i - 1];
 	}
 	return (array);
 }
