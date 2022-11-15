@@ -1,0 +1,17 @@
+#include "dog.h"
+
+/**
+ * print_dog - prints dog instance as name, age, owner
+ * @d: ptr to the dog
+ *
+ */
+
+void print_dog(struct dog *d)
+{
+	if (d != NULL)
+	{
+		printf("Name: %s\n", d->name == NULL ? "(nil)" : d->name);
+		d->age >= 0 ? printf("Age: %f\n", d->age) : printf("Age: (nil)\n");
+		printf("Owner: %s\n", d->owner == NULL ? "(nil)" : d->owner);
+	}
+}
