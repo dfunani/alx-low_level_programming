@@ -14,13 +14,13 @@ int op_add(int a, int b)
 	return (a + b);
 }
 
- /**
-  * op_sub - retursn the sum
-  * @a: op 1
-  * @b: op 2
-  *
-  * Return: sum
-  *
+/**
+ * op_sub - retursn the sum
+ * @a: op 1
+ * @b: op 2
+ *
+ * Return: sum
+ *
  */
 
 int op_sub(int a, int b)
@@ -28,13 +28,13 @@ int op_sub(int a, int b)
 	return (a - b);
 }
 
- /**
-  * op_mul - retursn the sum
-  * @a: op 1
-  * @b: op 2
-  *
-  * Return: sum
-  *
+/**
+ * op_mul - retursn the sum
+ * @a: op 1
+ * @b: op 2
+ *
+ * Return: sum
+ *
  */
 
 int op_mul(int a, int b)
@@ -42,13 +42,13 @@ int op_mul(int a, int b)
 	return (a * b);
 }
 
- /**
-  * op_div - retursn the sum
-  * @a: op 1
-  * @b: op 2
-  *
-  * Return: sum
-  *
+/**
+ * op_div - retursn the sum
+ * @a: op 1
+ * @b: op 2
+ *
+ * Return: sum
+ *
  */
 
 int op_div(int a, int b)
@@ -56,14 +56,15 @@ int op_div(int a, int b)
 	return (a / b);
 }
 
- /**
-  * op_mod - retursn the sum
-  * @a: op 1
-  * @b: op 2
-  *
-  * Return: sum
-  *
+/**
+ * op_mod - retursn the sum
+ * @a: op 1
+ * @b: op 2
+ *
+ * Return: sum
+ *
  */
+
 int op_mod(int a, int b)
 {
 	return (a % b);
