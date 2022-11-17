@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	char *s;
 	unsigned int i;
 
-	if (format == NULL)
+	while (format == NULL)
 	{
 		return;
 	}
@@ -36,7 +36,12 @@ void print_all(const char * const format, ...)
 
 		case 's':
 			s = va_arg(int_list, char *);
-			s == NULL ? printf("(nil)") : printf("%s", s);
+			if (s == NULL)
+			{
+				printf("(nil)");
+				break;
+			}
+			printf("%s", s);
 			break;
 		}
 		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
