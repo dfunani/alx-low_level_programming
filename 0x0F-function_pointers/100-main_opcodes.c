@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	}
 	if (atoi(argv[1]) < 0)
 	{
-		printf("%s", "Error");
+		printf("%s\n", "Error");
 		exit(2);
 	}
 	for (i = 0; i < atoi(argv[1]); i++)
