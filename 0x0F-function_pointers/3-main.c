@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 		return (98);
 	}
 	if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0)
-	    && strcmp(argv[3], "0"))
+	    && strcmp(argv[3], "0") == 0)
 	{
 		printf("%s\n", "Error");
 		return (100);
