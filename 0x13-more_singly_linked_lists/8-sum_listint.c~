@@ -1,0 +1,26 @@
+#include "lists.h"
+
+/**
+ * sum_listint - int summer
+ * @head: list
+ *
+ * Return: int sum
+ *
+ */
+
+int sum_listint(listint_t *head)
+{
+	int i;
+	listint_t *cpy;
+
+	cpy = head;
+	sum = 0;
+	if (head == NULL)
+		return (0);
+	while (cpy != NULL)
+	{
+		sum += cpy->n;
+		cpy = cpy->next;
+	}
+	return (sum);
+}
