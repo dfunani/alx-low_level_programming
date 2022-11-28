@@ -1,0 +1,34 @@
+#include "lists.h"
+
+/**
+ * add_nodeint_end - add node end
+ * @head: start
+ * @n: node new
+ *
+ * Return: ptr to new node
+ *
+ */
+
+listint_t *add_nodeint_end(listint_t **head, const int n)
+{
+	listint_t *ptr;
+	listint_t *cpyHead;
+
+	cpyHead = (*head);
+	ptr = (listint_t *)malloc(sizeof(listint_t));
+	if (ptr == NULL)
+		return (NULL);
+	ptr->n = n;
+	ptr->next = NULL;
+	if ((*head) == NULL)
+	{
+		(*head) = ptr;
+		return (*head);
+	}
+	while (cpyHead->next != NULL)
+	{
+		cpyHead = cpyHead->next;
+	}
+	cpyHead->next = ptr;
+	return (*head);
+}
