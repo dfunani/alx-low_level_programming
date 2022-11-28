@@ -6,7 +6,7 @@
  * @idx: index
  * @n: elem
  *
- * Return; ptr new node
+ * Return: ptr new node
  *
  */
 
@@ -27,7 +27,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			cpy->next = ptr;
 		}
 		i++;
-	       	cpy = cpy->next;
+		cpy = cpy->next;
 	}
 	return (ptr);
 }
