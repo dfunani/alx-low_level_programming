@@ -32,9 +32,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		if (index == i + 1)
 		{
 			temp = cpy->next;
-				cpy->next = temp->next;
-				free(temp);
-				return (1);
+			cpy->next = temp->next;
+			free(temp);
+			return (1);
 		}
 		cpy = cpy->next;
 		i++;
