@@ -17,8 +17,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	i = 0;
 	cpy = (*head);
 	if (cpy == NULL)
+	{
+		free(cpy);
 		return (-1);
-	if (index == 0)
+	}
+	if (cpy != NULL && index == 0)
 	{
 		(*head) = cpy->next;
 		free(cpy);
