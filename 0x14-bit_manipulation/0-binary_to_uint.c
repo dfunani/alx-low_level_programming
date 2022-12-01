@@ -19,12 +19,13 @@ char *str_rev(const char *str)
 		if (str[i] != 48 && str[i] != 49)
 			return (NULL);
 	revStr = malloc(sizeof(char) * i);
+	if (revStr == NULL)
+		return (NULL);
 	for (j = 0; i >= 0; j++)
 	{
 		revStr[j] = str[i - 1];
 		i--;
 	}
-	printf("==============%s\n", revStr);
 	return (revStr);
 }
 
@@ -68,5 +69,6 @@ unsigned int binary_to_uint(const char *b)
 	{
 		result += _pow(2, i) * (revb[i] - 48);
 	}
+	free(revb);
 	return (result);
 }
