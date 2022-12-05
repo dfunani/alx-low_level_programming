@@ -17,12 +17,12 @@ ssize_t len(char *str)
 		return (0);
 	for (i = 0; str[i] != '\0'; i++)
 		result++;
-	return result;
+	return (result);
 }
 
 /**
  * create_file - create the file
- * @filename; file name
+ * @filename: file name
  * @text_content: text
  *
  * Return: 1 or -1
