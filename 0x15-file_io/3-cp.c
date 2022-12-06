@@ -35,7 +35,7 @@ void cpyFile(int src, int dest, char *name_src, char *name_dest)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
 				name_src);
 			close(src);
-			close(dest);
+			free(buffer);
 			exit(98);
 		}
 		text_w = write(dest, buffer, text_r);
@@ -44,10 +44,11 @@ void cpyFile(int src, int dest, char *name_src, char *name_dest)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n",
 				name_dest);
 			close(src);
-			close(dest);
+			free(buffer);
 			exit(99);
 		}
 	}
+	free(buffer);
 	closed = close(src);
 	if (closed == -1)
 		close_handler(src);
