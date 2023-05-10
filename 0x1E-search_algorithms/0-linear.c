@@ -2,7 +2,12 @@
 
 /**
  * Linear Search Alg
- * c program
+ * integers using the Linear search algorithm
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: Always EXIT_SUCCESS
  *
  */
 
