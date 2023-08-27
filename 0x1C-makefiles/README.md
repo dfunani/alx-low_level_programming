@@ -1,5 +1,6 @@
-0x1C. C - Makefiles
-Learning Objectives
+# 0x1B.c
+
+## Learning Objectives
 What are make, Makefiles
 When, why and how to use Makefiles
 What are a rules and how to set and use them
